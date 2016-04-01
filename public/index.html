@@ -12,5 +12,8 @@
             <input type="submit" value="submit">
         </form>
         <button type="button" ng-click = "todoList.Get()">GetMac</button>
+        <div ng-repeat = "show in todoList.macaddress">
+          {{show.data}}
+        </div>
     </body>
 </html>

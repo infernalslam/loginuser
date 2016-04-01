@@ -12,7 +12,9 @@ angular.module('todoApp', [])
     function GetMac () {
       $http.get('/data')
         .then(function success (response) {
-          console.log(response)
+          // console.log(response)
+          todoList.macaddress.push(response)
+          console.log(todoList.macaddress)
         }, function error (response) {
           console.log(response)
         })
