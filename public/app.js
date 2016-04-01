@@ -5,13 +5,14 @@ angular.module('todoApp', [])
     todoList.macaddress = []
     todoList.sub = function () {
       console.log('Get mac address')
+    }
+    todoList.Get = function () {
       GetMac()
     }
     function GetMac () {
       $http.get('/data')
         .then(function success (response) {
           console.log(response)
-          todoList.macaddress.push(response)
         }, function error (response) {
           console.log(response)
         })

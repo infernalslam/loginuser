@@ -11,8 +11,6 @@ var macaddress = require('macaddress')
 // })
 var data = []
 macaddress.all(function (err, all) {
-  // console.log(JSON.stringify(all, null, 2))
-  // data.push(JSON.stringify(all, null, 2))
   console.log(all)
   data.push(all)
 })
